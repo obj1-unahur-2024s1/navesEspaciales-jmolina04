@@ -20,7 +20,7 @@ class Nave{
 	
 	method ponerseParaleloAlSol(){
 		direccion = 0
-	}
+	
 	
 	method acercarseUnPocoAlSol(){
 		direccion = direccion + 1.between(10,-10)
@@ -105,7 +105,7 @@ class NavePasajeros inherits Nave{
 	method recibirAmenaza(){
 		self.acelerar(velocidad) //escapar
 		self.descargarRacionComida(1) //avisar
-		self.descargarRacionBebida(2) 
+		self.descargarRacionBebida(2) //avisar
 	}
 	
 }
@@ -162,7 +162,7 @@ class NaveCombate inherits Nave{
 	
 	method recibirAmenaza(){
 		self.alejarseUnPocoDelSol() //escapar
-		self.alejarseUnPocoDelSol()
+		self.alejarseUnPocoDelSol()//escapar
 		self.emitirMensaje("Amenaza recibida") //avisar
 	}
 	
